@@ -27,4 +27,60 @@ Once you have the code working for both statements refactor the code as follows
   - Use only one console.log() after the switch statement to show the result and error
 */
 
-let weekdayNumber = 7;
+
+// Switch Version
+
+let weekday = 7;
+// let weekday = 10;
+let message = null;
+
+switch (weekday) {
+    case 1:
+        message = 'Today is Monday.';
+        break;
+    case 2:
+        message = 'Today is Tuesday.';
+        break;
+    case 3:
+        message = 'Today is Wednesday.';
+        break;
+    case 4:
+        message = 'Today is Thursday.';
+        break;
+    case 5:
+        message = 'Today is Friday.';
+        break;
+    case 6:
+        message = 'Today is Saturday.';
+        break;
+    case 7:
+        message = 'Today is Sunday.';
+        break;
+    default:
+        message = 'Please input a number between 1 and 7.'
+}
+
+console.log(message);
+
+
+// if / else if / else Version
+
+let weekdayNumber = 1;
+
+if (weekdayNumber == 1) {
+    console.log('Today is Monday.');
+} else if (weekedayNumber == 2) {
+    console.log('Today is Tuesday.');
+} else if (weekedayNumber == 3) {
+    console.log('Today is Wednesday.');
+} else if (weekedayNumber == 4) {
+    console.log('Today is Thursday.');
+} else if (weekedayNumber == 5) {
+    console.log('Today is Friday.');
+} else if (weekedayNumber == 6) {
+    console.log('Today is Saturday.');
+} else if (weekedayNumber == 7) {
+    console.log('Today is Sunday.');
+} else {
+    console.log('Please input a number between 1 and 7.');
+}
