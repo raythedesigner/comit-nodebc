@@ -58,10 +58,29 @@ console.log(getGreetingMessage('VanDamme')); */
 
 // // // // // // // // // // // // // // // // // // //
 
-function getGreetingMessage(name) {
+/* function getGreetingMessage(name) {
     return `Hello ${name}.`;
 }
 
 const todayGreeting = getGreetingMessage('John Rambo');
+
+console.log(todayGreeting); */
+
+// // // // // // // // // // // // // // // // // // //
+
+// Various Syntax
+
+function getGreetingMessage(name){
+    return `Hello ${name}`;
+}
+const getGreetingMessage = function (name){
+    return `Hello ${name}`;
+}
+const getGreetingMessage = (name) => {
+    return `Hello ${name}`;
+}
+const getGreetingMessage = (name) => `Hello ${name}`;
+
+const todayGreeting = getGreetingMessage("John Rambo");
 
 console.log(todayGreeting);
