@@ -27,4 +27,4 @@ while (n <= 10) {
     f2 = f;
     console.log(f);
     n++;
- }
+}
