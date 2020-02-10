@@ -16,4 +16,4 @@ do {
     }
 } while (number <= 1000);
 
-console.log(`The sum of odd numbers between 0 and 1000 is ${sum}.`)
+console.log(`The sum of odd numbers between 0 and 1000 is ${sum}.`);
