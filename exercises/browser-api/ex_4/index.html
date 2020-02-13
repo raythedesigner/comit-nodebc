@@ -1,0 +1,38 @@
+<!--
+Create the following folder/file structure:
+/ex_4
+  |-- index.html
+
+index.html
+--------
+Create a basic HTML document
+Create a script tag on the document head element
+Using prompt method ask the user to input his firstname
+Using prompt method ask the user to input his lastname
+Show the following message using the alert method
+// Welcome %firstname% %lastname% to JavaScript client side!!!
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser API Exercise 4</title>
+    <script>
+        let firstName = window.prompt('Input your first name.');
+        let lastName = window.prompt('Input your last name.');
+        window.alert(`Welcome ${firstName} ${lastName} to JavaScript client side!!`);
+    </script>
+</head>
+
+<body>
+
+<h1>Browser API Exercise 4</h1>
+<p>Let’s do this!!</p>
+
+</body>
+
+</html>
