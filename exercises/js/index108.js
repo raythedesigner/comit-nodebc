@@ -37,15 +37,17 @@ console.log(letsSort(10, 8, 25));
 
 function letsSort(number1, number2, number3, highToLow) {
     let numbers = [number1, number2, number3];
-    if highToLow {
+    if (highToLow) {
         function compareFunc(a, b) {
             return a - b;
         }
     } else {
         function compareFunc(a, b) {
             return b - a;
+        }
     }
     return numbers.sort(compareFunc);
 }
 
-console.log(letsSort(10, 8, 25, true));
+// console.log(letsSort(10, 8, 25, true));
+console.log(letsSort(10, 8, 25, false));

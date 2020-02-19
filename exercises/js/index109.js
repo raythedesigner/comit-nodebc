@@ -10,22 +10,30 @@ Show the following output if username and password don't belong to a user: Pleas
 Try calling the validateUser with valid credentials and also with invalid ones
 */
 
+/*
 let validateUser = function(username, password) {
-    if (username == nacho && password == Nerd1979) {
-        return true;
-    } else if (username == pedro && password == Batman0217) {
-        return true;
-    } else if (username == marta && password == Mother2312) {
-        return true;
+    if (username == 'nacho' && password == 'Nerd1979') {
+        true;
+    } else if (username == 'pedro' && password == 'Batman0217') {
+        true;
+    } else if (username == 'marta' && password == 'Mother2312') {
+        true;
     } else {
-        return false;
+        return 'Please input valid credentials.';
+    }
+    if (true) {
+        return `Welcome ${username}, nice to see you again.`;
+    }
+}
+*/
+
+let validateUser = function(username, password) {
+    if ((username == 'nacho' && password == 'Nerd1979') || (username == 'pedro' && password == 'Batman0217') || (username == 'marta' && password == 'Mother2312')) {
+        return `Welcome ${username}, nice to see you again.`;
+    } else {
+        return 'Please input valid credentials.';
     }
 }
 
-if (validateUser(username, password) == true) {
-    console.log(`Welcome ${username}, nice to see you again.`);
-} else {
-    console.log('Please input valid credentials.');
-}
-
-validateUser(nacho, Nerd1979);
+// console.log(validateUser('nacho', 'Nerd1979'));
+console.log(validateUser('axl', 'GunsNRoses'));
