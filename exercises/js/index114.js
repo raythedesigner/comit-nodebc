@@ -7,5 +7,14 @@ Call this function using at least 5 different words :)
 */
 
 function revert(string) {
-    
+    const text = string;
+    let resultRevert = "";
+    for (let i = text.length - 1; i >= 0; i--) {
+        resultRevert += text[i]
+    };
+    return resultRevert;
 }
+
+console.log(revert('Guns N\' Roses'));
+console.log(revert('Led Zeppelin'));
+console.log(revert('Aerosmith'));
