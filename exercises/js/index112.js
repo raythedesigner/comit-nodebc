@@ -15,7 +15,9 @@ Find a way to deal with the following scenarios:
 */
 
 function showNumbers(start, end) {
-    if (start < end) {
+    if (typeof start != 'number' || typeof end != 'number') {
+        console.log('Please input numbers for both parameters.');
+    } else if (start < end) {
         for (let inBetween = start + 1; inBetween < end; inBetween++) {
             console.log(inBetween);
         }
@@ -25,8 +27,6 @@ function showNumbers(start, end) {
         }
     } else if (start == end) {
         console.log(`The starting number and ending number are both ${start}.`);
-    } else if (typeof start != 'number' || typeof end != 'number') {
-        console.log('Please input numbers for both parameters.');
     } else {
         console.log('Please input numbers for both parameters.');
     }
