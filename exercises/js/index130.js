@@ -1,13 +1,15 @@
 /*
 Create a new index130.js file
 Define a mutants array with the following values:
+--------
   - Professor X
   - Cyclops
   - Iceman
   - Angel
   - Beast
   - Phoenix
-Sort the list
+--------
+  Sort the list
 Reverse the sorted list
 Join all mutants name using the following text: '* '
 Show the following output:
@@ -17,10 +19,6 @@ Show the following output:
   - Mutants name separated by *
 */
 
-
-/*
-// Solution
-
 const mutants = [
     'Professor X',
     'Cyclops',
@@ -28,42 +26,30 @@ const mutants = [
     'Angel',
     'Beast',
     'Phoenix'
-]
-console.log('original list:', mutants)
-let sorted_array=mutants.sort();
-console.log('Sorted list:', mutants)
-let reversed_array = sorted_array.reverse();
-console.log('Reversed list: ', mutants)
-let joined_array = reversed_array.join(' * ');
-console.log('joined list:', joined_array);
-*/
+];
 
+console.log(mutants);
+
+// Didn't work
 /*
-// Original Solution
-
-const mutants = ['Professor X', 'Cyclops', 'Iceman', 'Angel', 'Beast', 'Phoenix']
-console.log('original list:', mutants)
-let sorted_array = mutants.sort();
-console.log('Sorted list:', mutants)
-let reversed_array = sorted_array.reverse();
-console.log('Reversed list: ', mutants)
-let joined_array = reversed_array.join(' * ');
-console.log('joined list:', joined_array);
+const mutantsSorted = mutants.sort(function(a, b) {
+    if (a.mutants < b.mutants) {
+        return -1;
+    } else if (a.mutants > b.mutants) {
+        return 1;
+    } else {
+        return 0;
+    }
+});
 */
 
-// Scope Explanation
+// This worked
+const mutantsSorted = mutants.slice().sort();
 
-// GLOBAL SCOPE
-const mutants = ['Professor X', 'Cyclops', 'Iceman', 'Angel', 'Beast', 'Phoenix']
-function manipulate_mutants(mutants) { // Function declaration
-    // FUNCTIONAL SCOPE
-    console.log('original list:', mutants)
-    let sorted_array = mutants.slice().sort();
-    console.log('Sorted list:', sorted_array)
-    let reversed_array = sorted_array.reverse();
-    console.log('Reversed list: ', reversed_array)
-    let joined_array = reversed_array.join(' * ');
-    console.log('joined list:', joined_array);
-}
-manipulate_mutants(mutants) // Function execution
-console.log('ORIGINAL ARRAY', mutants);
+console.log(mutantsSorted);
+
+const mutantsReversed = mutantsSorted.reverse();
+const mutantsJoined = mutants.join('* ');
+
+console.log(mutantsReversed);
+console.log(mutantsJoined);
