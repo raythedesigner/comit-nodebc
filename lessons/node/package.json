@@ -11,6 +11,7 @@
   "author": "Ray",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "uglify": "^0.1.5"
   }
 }

@@ -1,20 +1,5 @@
-/*
-var person = {
-    name: "John Rambo",
-    age: 33,
-    address: "170 Richards Street"
-}
+let name = "John Rambo"
 
-console.log(person.name);
-console.log(person.age);
-console.log(person.address);
-*/
+let age = 34;
 
-const express = require('express')
-const app = express()
- 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
- 
-app.listen(3000)
+console.log("Name: ", name)
