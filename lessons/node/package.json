@@ -1,17 +1,21 @@
 {
-  "name": "node",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Ray",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "uglify": "^0.1.5"
-  }
+    "name": "node",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js",
+        "uglify": "uglifyjs index.js --output script.js"
+    },
+    "keywords": [],
+    "author": "Ray",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "morgan": "^1.9.1"
+    },
+    "devDependencies": {
+        "uglify-js": "^3.8.0"
+    }
 }
