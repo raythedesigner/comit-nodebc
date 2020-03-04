@@ -30,7 +30,11 @@ const mutants = [
     'Gambit'
 ];
 
-mutants.forEach(function(mutant, index) {
-    console.log(mutant);
-    console.log(index);
+let string = '';
+
+mutants.forEach(function(name){
+    if (name == 'Iceman' || name == 'Logan' || name == 'Phoenix'){
+        string = name;
+        console.log(string);
+    }
 });

@@ -28,6 +28,7 @@ const mutants = [
     'Gambit'
 ];
 
-mutants.forEach(function(mutant) {
-    console.log(mutant);
+mutants.forEach(function(mutant, position) {
+    console.log(`Position: ${position}`);
+    console.log(`Name: ${mutant}`);
 });
